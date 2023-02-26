@@ -1,3 +1,19 @@
+Problem Statement 1 
+
+Subject: Music and Audio Processing
+
+Problem Statement: Check if two audio/music files are similar/same.
+Ans code in audio_sim file
+explanaton:
+step1: for the above problem i use librosa library for library for analyzing and processing audio signals and numpy library for numerical operations.
+step2: Taking input of location of two audio file from the user and loaded using the librosa.load() function, which returns the audio samples and the sampling rate. 
+step3: next use librosa.feature.mfcc() function to takes the audio samples and the sampling rate as input from the librosa.load() function and returns a matrix of MFCC features.
+step4: if our audio files having having the different length i use min_length variable to resize them into equal length.
+step5: Then the similarity between the two audio files is computed using the cosine similarity between the MFCC feature matrices. 
+
+
+--------------------------------------------------------------------------------------------------------------------------
+
 Problem Statement 12
 
 Subject: Text Processing
@@ -10,9 +26,12 @@ step2: taking input for the location of text file from the user.
 step3:open the file in read mode using "with open function" and read the content of the file.
 step4: then i use regular expression to check if there is a url present in the given text file.
 step5:then i use a list(url_matches) that store all url that are present in the text.
-step6:if the length of list(url_matches) is greater than 0 it will print number of urls and first occurences of url else return 0;
+step6:if the length of list(url_matches) is greater than 0 it will print number of urls and first occurences of url else return 0.
 
------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+
 problem statement 15
 Subject: Image Processing
 
